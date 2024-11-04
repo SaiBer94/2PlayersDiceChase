@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="p1Screen">
+            <h1>Player 1</h1>
+            <h2>Total:</h3>
+            <p class="p1Tot">0</p>
+            <div>
+                <h2>current roll: </h3>
+                <p class="p1Hand">0</p>
+                
+            </div>
+        </div>
+        <div class="middleScreen">
+            <button class="btnNew">🆕 New game 🆕</button>
+            <p>Playing:<br> <p class="curTurn">Player 1</p></p>
+            <img class="diceImg" src="Assets/dice1.png" alt="the cube">
+            <h3 class="message">Game on</h3>
+            <button class="btnRoll">🎲 Roll again 🎲</button>
+            <button class="btnHold">🫸 Hold 🫷</button>
+            <button class="btnInst">🧾 Instructions 🧾</button>
+        </div>
+        <div class="modal hidden">
+            <div class="modal-content">
+                <h1>Goal: Reach 100 points</h1>
+                <p>
+                    Each turn, a player is allowed to roll the dice as many times as they want.<br>
+                    Each roll tops up the points on hand of a player.<br>
+                    Turns can end in two ways: <br>
+                    Hold: Player presses hold and locks in their points in the bank.<br>
+                    Rolled 1: Player rolled one, lost their turn, and resets their points both in hand and bank.<br>
+                    game will end when player locked in a total of 100 or more points by pressing hold!
+                </p>
+                <button class="close-modal">&times;</button>
+            </div>
+        </div>
+        <div class="p2Screen">
+            <h1>Player 2</h1>
+            <h2>Total:</h3>
+            <p class="p2Tot">0</p>
+            <div>
+                <h2>current roll: </h3>
+                <p class="p2Hand">0</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
