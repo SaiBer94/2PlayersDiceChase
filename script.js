@@ -35,7 +35,7 @@ function endTurn (player) {
 }
 
 function turn (player, score) {
-    if(score === 15) {
+    if(score === 1) {
         document.querySelector(`.p${player}Tot`).textContent = 0;
         document.querySelector(`.p${player}Hand`).textContent = 0;
         onHand = 0;
